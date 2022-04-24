@@ -1,0 +1,30 @@
+:root {
+  --primary-color: crimson;
+  --secondary-color: #333;
+}
+
+nav {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: bold;
+  padding: 5px 0;
+  position: relative;
+  border-bottom: 2px solid transparent;
+}
+
+.active-link {
+  color: crimson;
+  border-bottom: 2px solid crimson;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+  transition: .2s;
+}
