@@ -1,0 +1,20 @@
+.qna-container {
+  text-align: left;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.qna-container .qna {
+  border: 2px solid crimson;
+  padding: 10px;
+}
+
+.qna h2 {
+  color: crimson;
+}
+
+.qna p {
+  font-size: 20px;
+}
