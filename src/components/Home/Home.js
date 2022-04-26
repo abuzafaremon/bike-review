@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useReviews from '../../hooks/useReviews';
 import bike from '../../img/bike.png';
 import './Home.css';
 
 const Home = () => {
+  const [reviews, setReviews] = useReviews();
+  const firstThreeReviews = reviews.slice(0, 3);
   return (
     <div>
       <section className="container">
@@ -20,7 +23,14 @@ const Home = () => {
       <section className='reviews-container'>
         <h2>Customer Reviews</h2>
         <div className='reviews'>
-
+          {
+            firstThreeReviews.map(review => <div key={review.id}>
+              <img src={review.img} alt="" />
+              <h2>Name: {review.name}</h2>
+              <h4>Review: {review.review}</h4>
+              <h5>Ratting:{review.ratting}</h5>
+            </div>)
+          }
         </div>
         <Link className='btn' to='/reviews'>See All Reviews</Link>
       </section>
