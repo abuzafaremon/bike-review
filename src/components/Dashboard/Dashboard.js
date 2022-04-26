@@ -52,7 +52,7 @@ const Dashboard = () => {
         <Bar dataKey='revenue' fill="#12889d"></Bar>
       </BarChart>
 
-      <PieChart width={500} height={300}>
+      <PieChart width={500} height={350}>
         <Tooltip />
         <Pie data={data} dataKey='revenue' fill='#8884d8' outerRadius={50} cy='50%' cx='50%'></Pie>
         <Pie data={data} dataKey='sell' fill='#82ca9d' innerRadius={60} cy='50%' cx='50%' outerRadius={80} label></Pie>

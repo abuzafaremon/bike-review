@@ -1,10 +1,16 @@
-# Getting Started with Create React App
+# Bike Review Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## [Live Website Link](https://bike-review-emon.netlify.app/) 
 
-## Available Scripts
+https://bike-review-emon.netlify.app/
 
-In the project directory, you can run:
+## What I do:
+
+- This is a bike review website
+- Implement review with customer img name and ratings
+- In home component show only 3 review but In Reviews component show all reviews
+- Implement chart in dashboard component
+- implement not found route
 
 ### `npm start`
 
