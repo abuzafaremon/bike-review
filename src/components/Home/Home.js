@@ -27,8 +27,8 @@ const Home = () => {
             firstThreeReviews.map(review => <div key={review.id}>
               <img src={review.img} alt="" />
               <h2>Name: {review.name}</h2>
-              <h4>Review: {review.review}</h4>
-              <h5>Ratting:{review.ratting}</h5>
+              <p>Review: {review.review}</p>
+              <h5>Ratting: {review.ratting}</h5>
             </div>)
           }
         </div>
