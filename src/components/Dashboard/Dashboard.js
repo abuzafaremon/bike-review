@@ -43,20 +43,19 @@ const Dashboard = () => {
   ]
   return (
     <div className='chart-container'>
-      <BarChart width={600} height={400} data={data}>
+      <BarChart width={500} height={350} data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey='month' />
         <YAxis />
         <Tooltip />
         <Bar dataKey='investment' fill="#8884d8"></Bar>
-        <Bar dataKey='sell' fill="#82ca9d"></Bar>
         <Bar dataKey='revenue' fill="#12889d"></Bar>
       </BarChart>
 
-      <PieChart width={730} height={250}>
+      <PieChart width={500} height={300}>
         <Tooltip />
         <Pie data={data} dataKey='revenue' fill='#8884d8' outerRadius={50} cy='50%' cx='50%'></Pie>
-        <Pie data={data} dataKey='revenue' fill='#82ca9d' innerRadius={60} cy='50%' cx='50%' outerRadius={80} label></Pie>
+        <Pie data={data} dataKey='sell' fill='#82ca9d' innerRadius={60} cy='50%' cx='50%' outerRadius={80} label></Pie>
       </PieChart>
     </div>
   );

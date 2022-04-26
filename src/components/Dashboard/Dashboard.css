@@ -6,8 +6,6 @@
   margin: 20px;
 }
 
-
-
 @media screen and (max-width: 767px) {
   .chart-container {
     grid-template-columns: 1fr;
